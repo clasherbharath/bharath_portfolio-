@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharath K | Frontend Developer & ECE Student Portfolio</title>
+    <meta name="description" content="Portfolio of Bharath K, an Electronics & Computer Engineering student at Sona College of Technology. Specializing in Frontend Development, Embedded Systems, and PCB Design.">
+    <meta name="keywords" content="Bharath K, Frontend Developer, ECE Student, Electronics and Computer Engineering, Portfolio, Web Developer, Embedded Systems, PCB Design, Sona College of Technology">
+    
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Blobs for Aesthetics -->
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div class="glow-blob blob-3"></div>
+
+    <!-- Header / Sticky Navbar -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-bracket">&lt;</span>Bharath <span class="logo-accent">K</span><span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link btn-contact-nav">Contact</a>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content reveal-on-scroll">
+                    <span class="hero-subtitle">Welcome to my space</span>
+                    <h1 class="hero-title">Hi, I'm <span class="gradient-text">Bharath K</span></h1>
+                    <h2 class="hero-role">I am a <span id="typed-role" class="accent-text"></span><span class="typed-cursor">|</span></h2>
+                    <p class="hero-description">
+                        Passionate about frontend development, embedded systems, and building interactive web applications. 
+                        Bridging the gap between software excellence and hardware innovation.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code-branch"></i> View Projects</a>
+                        <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+                        <a href="#" class="btn btn-tertiary" id="download-resume-btn"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-on-scroll">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow"></div>
+                        <img src="assets/avatar.png" alt="Bharath K - ECE & Frontend Developer illustration" class="avatar-img">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator">
+                <a href="#about" aria-label="Scroll down to About section">
+                    <span>Scroll Down</span>
+                    <i class="fa-solid fa-chevron-down bounce"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">Biography</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info-card glass-card reveal-on-scroll">
+                        <div class="info-icon-header">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h3>Education & Background</h3>
+                        </div>
+                        <p>
+                            I am currently pursuing my bachelor's degree in <strong>Electronics and Computer Engineering (ECE)</strong> at <strong>Sona College of Technology</strong>. My academic journey is a unique combination of hardware logic and software design, equipping me to solve complex multi-layered engineering problems.
+                        </p>
+                        <p>
+                            I am deep-diving into frontend development, UI/UX aesthetics, and rapid software prototyping. I enjoy translating creative mockups into beautiful, functional, and production-grade code.
+                        </p>
+                        <div class="about-edu-details">
+                            <div class="edu-item">
+                                <span class="edu-year">2023 - Present</span>
+                                <span class="edu-title">B.E. Electronics & Computer Engineering</span>
+                                <span class="edu-inst">Sona College of Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-interests reveal-on-scroll">
+                        <div class="interest-header">
+                            <h3>Core Focus & Interests</h3>
+                        </div>
+                        <div class="interests-grid">
+                            <div class="interest-card glass-card">
+                                <i class="fa-solid fa-laptop-code interest-icon"></i>
+                                <h4>Frontend Dev</h4>
+                                <p>Building interactive, visually stunning, and responsive user interfaces.</p>
+                            </div>
+                            <div class="interest-card glass-card">
+                                <i class="fa-solid fa-microchip interest-icon"></i>
+                                <h4>Embedded Systems</h4>
+                                <p>Programming microcontrollers and designing smart physical computing solutions.</p>
+                            </div>
+                            <div class="interest-card glass-card">
+                                <i class="fa-solid fa-compass-drafting interest-icon"></i>
+                                <h4>PCB Design</h4>
+                                <p>Drafting hardware schematics and multi-layer layouts for electronic systems.</p>
+                            </div>
+                            <div class="interest-card glass-card">
+                                <i class="fa-solid fa-trophy interest-icon"></i>
+                                <h4>Hackathons</h4>
+                                <p>Solving challenging problems, prototyping fast, and collaborating in team events.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">Expertise</span>
+                    <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="skills-container">
+                    <!-- Column 1: Frontend -->
+                    <div class="skills-category-card glass-card reveal-on-scroll">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML5</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>CSS3 & Modern CSS</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Responsive Layout Design</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git & GitHub</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Programming -->
+                    <div class="skills-category-card glass-card reveal-on-scroll">
+                        <div class="category-header">
+                            <i class="fa-solid fa-terminal"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C Programming</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Verilog HDL</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Hardware & Other -->
+                    <div class="skills-category-card glass-card reveal-on-scroll">
+                        <div class="category-header">
+                            <i class="fa-solid fa-sliders"></i>
+                            <h3>ECE & Hardware Design</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>PCB Design (Schematic & Layout)</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Embedded C / Arduino</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Microcontroller Architecture</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">My Recent <span class="gradient-text">Projects</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card glass-card reveal-on-scroll">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project_showcase.png" alt="EduTrack Student Dashboard Preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-icon-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="project-icon-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tags">
+                                <span class="badge">HTML</span>
+                                <span class="badge">CSS</span>
+                                <span class="badge">JavaScript</span>
+                            </div>
+                            <h3 class="project-card-title">EduTrack Student Dashboard</h3>
+                            <p class="project-description">
+                                A comprehensive, centralized portal for students to track classes, attendance, assignments, and grades. Features visual progress trackers, calendar integration, and interactive dark-themed widgets.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" class="btn-project btn-github"><i class="fa-brands fa-github"></i> Source</a>
+                                <a href="#" class="btn-project btn-live"><i class="fa-solid fa-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-card reveal-on-scroll">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project_showcase.png" alt="Sleep & Wellness Tracker Preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-icon-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="project-icon-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tags">
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">CSS Grid</span>
+                                <span class="badge">Charts.js</span>
+                            </div>
+                            <h3 class="project-card-title">Sleep & Wellness Tracker</h3>
+                            <p class="project-description">
+                                A user-friendly web app that monitors sleep patterns, records hydration, and tracks physical health inputs. Integrated canvas-based charts supply responsive visualizations and daily wellness summaries.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" class="btn-project btn-github"><i class="fa-brands fa-github"></i> Source</a>
+                                <a href="#" class="btn-project btn-live"><i class="fa-solid fa-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-card reveal-on-scroll">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project_showcase.png" alt="Responsive Portfolio Website Preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-icon-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="project-icon-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tags">
+                                <span class="badge">HTML5</span>
+                                <span class="badge">Custom CSS</span>
+                                <span class="badge">JS ES6</span>
+                            </div>
+                            <h3 class="project-card-title">Responsive Portfolio Website</h3>
+                            <p class="project-description">
+                                This exact personal portfolio site! Built from scratch with CSS variables, custom intersection observer triggers, typing animations, glassmorphism cards, and full device screen responsiveness.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" class="btn-project btn-github"><i class="fa-brands fa-github"></i> Source</a>
+                                <a href="#" class="btn-project btn-live"><i class="fa-solid fa-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card glass-card reveal-on-scroll">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project_showcase.png" alt="Weather App Preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-icon-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="project-icon-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tags">
+                                <span class="badge">JS API</span>
+                                <span class="badge">CSS Flexbox</span>
+                                <span class="badge">Weather API</span>
+                            </div>
+                            <h3 class="project-card-title">Weather App</h3>
+                            <p class="project-description">
+                                A dynamic weather forecast application that pulls real-time data from OpenWeatherMap. Displays wind rates, humidity, UV indices, and multi-day forecasts. Adapts layout backgrounds according to weather types.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" class="btn-project btn-github"><i class="fa-brands fa-github"></i> Source</a>
+                                <a href="#" class="btn-project btn-live"><i class="fa-solid fa-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card glass-card reveal-on-scroll">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project_showcase.png" alt="To-Do App Preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-icon-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="project-icon-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tags">
+                                <span class="badge">HTML5</span>
+                                <span class="badge">CSS Glassmorphism</span>
+                                <span class="badge">Local Storage</span>
+                            </div>
+                            <h3 class="project-card-title">To-Do App</h3>
+                            <p class="project-description">
+                                A sleek productivity checklist app utilizing client-side LocalStorage. Offers category tags, task priority settings, drag-and-drop ordering, and glowing task completion effects.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" class="btn-project btn-github"><i class="fa-brands fa-github"></i> Source</a>
+                                <a href="#" class="btn-project btn-live"><i class="fa-solid fa-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Certifications Section -->
+        <section class="certifications-section section-padding" id="certifications">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">Credentials</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card glass-card reveal-on-scroll">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-microchip cert-icon"></i>
+                        </div>
+                        <div class="cert-details">
+                            <span class="cert-issuer">Academic Program</span>
+                            <h3 class="cert-name">Verilog HDL</h3>
+                            <p class="cert-desc">
+                                Specialized training in Hardware Description Language (HDL), digital logic modeling, testbench design, and RTL synthesis for FPGA/ASIC implementation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card glass-card reveal-on-scroll">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-compass-drafting cert-icon"></i>
+                        </div>
+                        <div class="cert-details">
+                            <span class="cert-issuer">Professional Course</span>
+                            <h3 class="cert-name">End-to-End PCB Design & Development</h3>
+                            <p class="cert-desc">
+                                Hands-on learning covering circuit schematics, routing, component placement, design rule checks (DRC), and bill of materials (BOM) creation for fabrication.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card glass-card reveal-on-scroll">
+                        <div class="cert-icon-wrapper">
+                            <i class="fa-solid fa-lightbulb cert-icon"></i>
+                        </div>
+                        <div class="cert-details">
+                            <span class="cert-issuer">NPTEL | IIT Madras</span>
+                            <h3 class="cert-name">Design Thinking</h3>
+                            <p class="cert-desc">
+                                Comprehensive program on design methodologies, customer-centric brainstorming, prototype testing, and structured problem-solving paradigms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Achievements Section -->
+        <section class="achievements-section section-padding" id="achievements">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">Milestones</span>
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="achievements-container">
+                    <!-- Achievement 1 -->
+                    <div class="achievement-row reveal-on-scroll">
+                        <div class="achievement-icon-box">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Hackathon Participant & Innovator</h3>
+                            <p>
+                                Active competitor in multiple collegiate and regional hackathons. Ideated and built functional prototypes bridging hardware sensors and frontend status dashboards under intense time constraints.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="achievement-row reveal-on-scroll">
+                        <div class="achievement-icon-box">
+                            <i class="fa-solid fa-flask-vial"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Active Member of Sona AICTE IDEA Lab</h3>
+                            <p>
+                                Collaborated in the state-of-the-art AICTE IDEA Lab at Sona College of Technology, utilizing modern digital prototyping, 3D printers, laser cutters, and microcontroller developer workstations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="achievement-row reveal-on-scroll">
+                        <div class="achievement-icon-box">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Workshops & Seminars Coordinator</h3>
+                            <p>
+                                Attended and co-facilitated seminars on Embedded Systems, Advanced PCB Routing, and Modern Javascript Frameworks to cultivate an interactive peer learning circle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Info -->
+                    <div class="contact-info reveal-on-scroll">
+                        <div class="contact-card glass-card">
+                            <h3>Contact Information</h3>
+                            <p>Feel free to reach out to me for internships, placements, project collaborations, or just a friendly conversation about ECE and Frontend development!</p>
+                            
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <span>Email</span>
+                                        <a href="mailto:bharath.ece.dev@gmail.com">bharath.ece.dev@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <span>Phone</span>
+                                        <a href="tel:+919876543210">+91 98765 43210</a>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <span>Location</span>
+                                        <span>Tamil Nadu, India</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="social-links-title">Connect with me</div>
+                            <div class="social-links-row">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                                <a href="mailto:bharath.ece.dev@gmail.com" class="social-icon" aria-label="Email Address"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-form-container glass-card reveal-on-scroll">
+                        <form id="portfolio-contact-form" class="contact-form">
+                            <h3>Send Message</h3>
+                            
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Hi Bharath, I would love to talk about a frontend project..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            
+                            <div class="form-status-message" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. Footer Section -->
+    <footer class="portfolio-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-bracket">&lt;</span>Bharath <span class="logo-accent">K</span><span class="logo-bracket">/&gt;</span>
+                </a>
+                <p>Electronics & Computer Engineering Student | Frontend Developer</p>
+            </div>
+            
+            <div class="footer-nav">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Bharath K. All Rights Reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:bharath.ece.dev@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification for Form Status -->
+    <div class="toast-notification" id="toast-notify"></div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
